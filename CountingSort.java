@@ -1,4 +1,6 @@
-class CountingSort {
+import java.util.*;
+
+public class CountingSort {
     public void sort(char arr[]) {
         int n = arr.length;
 
