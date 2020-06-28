@@ -128,8 +128,6 @@ class MergeSort {
         }
     }
 
-    /* UTILITY FUNCTIONS */
-    /* Function to print an array */
     static void printArray(int A[], int size) {
         int i;
         for (i = 0; i < size; i++)
@@ -137,8 +135,7 @@ class MergeSort {
         System.out.println();
     }
 
-    /* Driver program to test above functions */
-    public static void main(String []args){
+    public static void main(String[] args){
         int arr[] = { 12, 11, 13, 5, 6, 7 };
 
         System.out.println("Given Array");

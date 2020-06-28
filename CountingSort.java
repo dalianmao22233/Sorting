@@ -24,8 +24,7 @@ public class CountingSort {
 
         // Build the output character array
         // To make it stable we are operating in reverse order.
-        for (int i = n-1; i>=0; i--)
-        {
+        for (int i = n-1; i>=0; i--) {
             output[count[arr[i]]-1] = arr[i];
             --count[arr[i]];
         }
@@ -38,8 +37,7 @@ public class CountingSort {
 
     public static void main(String[] args) {
         CountingSort ob = new CountingSort();
-        char arr[] = {'g', 'e', 'e', 'k', 's', 'f', 'o', 'r', 'g', 'e', 'e', 'k', 's'
-        };
+        char arr[] = {'g', 'e', 'e', 'k', 's', 'f', 'o', 'r', 'g', 'e', 'e', 'k', 's'};
 
         ob.sort(arr);
         for (int i=0; i<arr.length; ++i)
