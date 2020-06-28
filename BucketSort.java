@@ -5,7 +5,6 @@ public class BucketSort {
     public void bucketSort(float[] arr, int n) {
         if (n <= 0)
             return;
-        @SuppressWarnings("unchecked")
         ArrayList<Float>[] bucket = new ArrayList[n];
 
         // Create empty buckets
