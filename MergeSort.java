@@ -68,16 +68,6 @@ class MergeSort {
         }
     }
 
-    /* A utility function to print array of size n */
-    static void printArray(int arr[]) {
-        int n = arr.length;
-        for (int i = 0; i < n; ++i)
-            System.out.print(arr[i] + " ");
-        System.out.println();
-    }
-
-
-
 // ========================================================================================
     // 2. in-place Merge Sort
 
@@ -152,16 +142,19 @@ class MergeSort {
         int arr[] = { 12, 11, 13, 5, 6, 7 };
 
         System.out.println("Given Array");
-        printArray(arr);
+        printArray(arr, arr.length);
 
         MergeSort ob = new MergeSort();
-        ob.sort(arr, 0, arr.length - 1);
+        ob.sort(arr, 0, arr.length-1);
 
         System.out.println("\nSorted array");
-        printArray(arr);
+        printArray(arr, arr.length);
 //================================================
+
         int arr2[] = { 12, 11, 13, 5, 6, 7 };
         int arr_size = arr2.length;
+        System.out.println("\nSorted array (in-place)");
+
 
         mergeSort(arr2, 0, arr_size - 1);
         printArray(arr2, arr_size) ;

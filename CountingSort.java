@@ -36,11 +36,9 @@ public class CountingSort {
             arr[i] = output[i];
     }
 
-    // Driver method
     public static void main(String args[]) {
         CountingSort ob = new CountingSort();
-        char arr[] = {'g', 'e', 'e', 'k', 's', 'f', 'o',
-                'r', 'g', 'e', 'e', 'k', 's'
+        char arr[] = {'g', 'e', 'e', 'k', 's', 'f', 'o', 'r', 'g', 'e', 'e', 'k', 's'
         };
 
         ob.sort(arr);
